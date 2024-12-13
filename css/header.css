@@ -12,3 +12,12 @@
   flex-wrap: wrap; /*caso diminua a tela vai se quebrar ao invez de sumir*/
   gap: 0.5rem;
 }
+
+.header_menu a {
+  font-size: 1.125rem;
+  line-height: 1.3rem; /*altura da linha*/
+  padding: 0.625rem 1.25rem;
+  text-decoration: none;
+  color: #141414;
+  display: block;
+}
