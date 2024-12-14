@@ -18,15 +18,53 @@
 .introduction::before {
   content: "";
   display: block;
-  width: 8.125rem;
-  height: 20.625rem;
+  width: 12vw; /* Largura proporcional ao viewport */
+  height: 40vh; /* Altura proporcional ao viewport */
   background: url(../img/detalhe.svg) no-repeat;
+  background-size: contain; /* Garante que a imagem se ajuste */
   position: absolute;
-  top: 135px;
-  left: 460px;
+  top: 20%; /* Posição relativa ao contêiner */
+  left: 37%; /* Posição relativa */
 }
 
 .introduction p {
   font-size: 1.5rem;
   color: #525252;
+}
+
+@media (max-width: 1024px) {
+  .introduction h1 {
+    font-size: 3rem;
+  }
+  .introduction::before {
+    width: 10vw;
+    height: 42vh;
+    top: 23%;
+    left: 39%;
+  }
+}
+
+@media (max-width: 768px) {
+  .introduction {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+  .introduction::before {
+    width: 2px; /* Ajuste para telas menores */
+    height: 10px;
+    top: 5%;
+    left: 2%;
+  }
+  .introduction h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .introduction::before {
+    width: 20vw; /* Ajuste para telas muito pequenas */
+    height: 15vh;
+    top: 2%;
+    left: 1%;
+  }
 }
