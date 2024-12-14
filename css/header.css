@@ -11,6 +11,7 @@
   display: flex;
   flex-wrap: wrap; /*caso diminua a tela vai se quebrar ao invez de sumir*/
   gap: 0.5rem;
+  justify-content: center;
 }
 
 .header_menu a {
@@ -20,4 +21,16 @@
   text-decoration: none;
   color: #141414;
   display: block;
+}
+
+@media (max-width: 800px) {
+  .header {
+    flex-direction: column;
+    gap: 2.5rem;
+    padding: 1.25rem;
+  }
+  .header a {
+    background: #f5f5f5;
+    border-radius: 0.25rem;
+  }
 }
