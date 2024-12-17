@@ -1,10 +1,10 @@
 .introduction {
-  max-width: 75rem;
-  padding: 2.5rem 1.25rem;
+  max-width: 1200px;
+  padding: 40px 20px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 2fr;
-  gap: 6.25rem;
+  gap: 100px;
   align-items: center;
   position: relative;
 }
@@ -50,10 +50,10 @@
     gap: 40px;
   }
   .introduction::before {
-    width: 2px; /* Ajuste para telas menores */
-    height: 10px;
-    top: 5%;
-    left: 2%;
+    width: 2vw;
+    height: 38vh;
+    top: 30%;
+    left: 50.5%;
   }
   .introduction h1 {
     font-size: 2rem;
@@ -62,9 +62,9 @@
 
 @media (max-width: 480px) {
   .introduction::before {
-    width: 20vw; /* Ajuste para telas muito pequenas */
-    height: 15vh;
-    top: 2%;
-    left: 1%;
+    width: 3vw;
+    height: 40vh;
+    top: 14%;
+    left: 45%;
   }
 }
