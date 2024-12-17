@@ -61,10 +61,17 @@
 }
 
 @media (max-width: 480px) {
+  .introduction {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
   .introduction::before {
-    width: 3vw;
-    height: 40vh;
+    width: 0vw;
+    height: 0vh;
     top: 14%;
     left: 45%;
+  }
+  .introduction h1 {
+    font-size: 2rem;
   }
 }

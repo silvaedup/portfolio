@@ -1,6 +1,6 @@
 .header {
-  max-width: 75rem; /*limite maximo do site de 1200px*/
-  padding: 2rem 0.75rem;
+  max-width: 1200px; /*limite maximo do site de 1200px*/
+  padding: 32px 12px;
   margin: 0 auto; /*alinhar ao centro sempre*/
   display: flex;
   justify-content: space-between; /*faz com que a logo fique a direita e o menu a esquerda */
@@ -10,14 +10,14 @@
 .header_menu {
   display: flex;
   flex-wrap: wrap; /*caso diminua a tela vai se quebrar ao invez de sumir*/
-  gap: 0.5rem;
+  gap: 8px;
   justify-content: center;
 }
 
 .header_menu a {
   font-size: 1.125rem;
   line-height: 1.3rem; /*altura da linha*/
-  padding: 0.625rem 1.25rem;
+  padding: 10px 20px;
   text-decoration: none;
   color: #141414;
   display: block;
@@ -39,4 +39,8 @@
 }
 
 @media (max-width: 480px) {
+  .logo {
+    width: 40vw;
+    height: 20vh;
+  }
 }
