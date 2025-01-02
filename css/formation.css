@@ -9,6 +9,12 @@
 
 .formation .caption {
   color: #e0e0e0;
+  max-width: 4ch;
+}
+
+.formation .caption::after {
+  content: ""; /* Adiciona quebras de linha */
+  white-space: element;
 }
 
 .formation_text {
@@ -90,6 +96,7 @@
 
   .course_date {
     font-size: 0.775rem;
+    margin-bottom: 10px;
   }
 
   .course_description {
@@ -117,6 +124,49 @@
     margin-bottom: 30px;
   }
   .course_list {
+    max-width: 50ch;
+  }
+
+  .course {
+    padding: 10px;
+  }
+
+  .course_name {
+    font-size: 0.7rem;
+    line-height: 1;
+  }
+
+  .course_date {
+    font-size: 0.675rem;
+  }
+
+  .course_description {
+    font-size: 0.675rem;
+    flex: 1;
+  }
+
+  .course_institution {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .formation {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .formation .caption {
+    font-size: 3.5rem;
+    max-width: 11ch;
+  }
+
+  .formation_text {
+    font-size: 1rem;
+    top: 0%;
+    margin-bottom: 5px;
+  }
+  .course_list {
     max-width: 60ch;
   }
 
@@ -125,22 +175,57 @@
   }
 
   .course_name {
-    font-size: 0.9rem;
-    line-height: 1.2;
+    font-size: 0.8rem;
+    line-height: 1;
   }
 
   .course_date {
-    font-size: 0.775rem;
+    font-size: 0.675rem;
   }
 
   .course_description {
-    font-size: 0.775rem;
+    font-size: 0.675rem;
   }
 
   .course_institution {
-    font-size: 1.025rem;
+    font-size: 0.8rem;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 420px) {
+  .formation .caption {
+    font-size: 2.25rem;
+    max-width: none;
+  }
+
+  .formation_text {
+    font-size: 0.625rem;
+    top: 0%;
+    margin-bottom: 5px;
+  }
+  .course_list {
+    max-width: 60ch;
+  }
+
+  .course {
+    padding: 10px;
+  }
+
+  .course_name {
+    font-size: 0.625rem;
+    line-height: auto;
+    max-width: 20ch;
+  }
+
+  .course_date {
+    font-size: 0.375rem;
+  }
+
+  .course_description {
+    font-size: 0.5rem;
+  }
+
+  .course_institution {
+    font-size: 0.5rem;
+  }
 }

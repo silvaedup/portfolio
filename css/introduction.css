@@ -9,6 +9,10 @@
   position: relative;
 }
 
+.img_responsive {
+  display: none;
+}
+
 .introduction h1 {
   font-size: 4.5rem;
   line-height: 1.125;
@@ -73,5 +77,47 @@
   }
   .introduction h1 {
     font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 469px) {
+  .introduction::before {
+    width: 0vw;
+    height: 0vh;
+  }
+  .introduction h1 {
+    font-size: 1.8rem;
+  }
+  .introduction p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .introduction {
+    display: flex;
+  }
+
+  .img_default {
+    display: none;
+  }
+
+  .img_responsive {
+    display: block;
+  }
+
+  .introduction::before {
+    width: 2vw;
+    height: 18vh;
+    top: 21%;
+    left: 36%;
+  }
+
+  .introduction h1 {
+    font-size: 1rem;
+  }
+
+  .introduction p {
+    font-size: 0.625rem;
   }
 }

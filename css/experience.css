@@ -64,6 +64,16 @@
     top: auto;
     font-size: 1rem;
     max-width: none;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 420px) {
+  .experience .caption {
+    font-size: 2.25rem;
+  }
+
+  .experience_text {
+    font-size: 0.625rem;
   }
 }
