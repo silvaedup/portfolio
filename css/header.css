@@ -1,26 +1,30 @@
 .header {
-  max-width: 1200px; /*limite maximo do site de 1200px*/
+  max-width: 1200px;
   padding: 32px 12px;
-  margin: 0 auto; /*alinhar ao centro sempre*/
+  margin: 0 auto;
   display: flex;
-  justify-content: space-between; /*faz com que a logo fique a direita e o menu a esquerda */
+  justify-content: space-between;
   align-items: center;
 }
 
 .header_menu {
   display: flex;
-  flex-wrap: wrap; /*caso diminua a tela vai se quebrar ao invez de sumir*/
+  flex-wrap: wrap;
   gap: 8px;
   justify-content: center;
 }
 
 .header_menu a {
   font-size: 1.125rem;
-  line-height: 1.3rem; /*altura da linha*/
+  line-height: 1.3rem;
   padding: 10px 20px;
   text-decoration: none;
   color: #141414;
   display: block;
+}
+
+.logo_responsivo {
+  display: none;
 }
 
 @media (max-width: 1024px) {
@@ -39,8 +43,30 @@
 }
 
 @media (max-width: 480px) {
+  .header {
+    flex-direction: unset;
+    padding: 16px 20px 0px;
+    gap: 10px;
+  }
+
+  .header_menu {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    display: flex;
+  }
+
+  .header_menu a {
+    font-size: 0.5625rem;
+    line-height: normal;
+    padding: 5px 10px;
+  }
+
   .logo {
-    width: 40vw;
-    height: 20vh;
+    display: none;
+  }
+
+  .logo_responsivo {
+    display: block;
   }
 }

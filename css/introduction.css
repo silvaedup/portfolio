@@ -22,13 +22,13 @@
 .introduction::before {
   content: "";
   display: block;
-  width: 12vw; /* Largura proporcional ao viewport */
-  height: 40vh; /* Altura proporcional ao viewport */
-  background: url(../img/detalhe.svg) no-repeat;
-  background-size: contain; /* Garante que a imagem se ajuste */
+  width: 12vw;
+  height: 40vh;
+  background: url(../img/detalhe.svg) no-repeat left;
+  background-size: contain;
   position: absolute;
-  top: 20%; /* Posição relativa ao contêiner */
-  left: 37%; /* Posição relativa */
+  top: 20%;
+  left: 37%;
 }
 
 .introduction p {
@@ -68,10 +68,11 @@
   .introduction {
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+    padding: 30px 20px;
   }
   .introduction::before {
-    width: 2.9vw;
-    height: 39vh;
+    width: 0vw;
+    height: 0vh;
     top: 20%;
     left: 49%;
   }
@@ -96,6 +97,7 @@
 @media (max-width: 420px) {
   .introduction {
     display: flex;
+    padding: 20px;
   }
 
   .img_default {
@@ -109,8 +111,8 @@
   .introduction::before {
     width: 2vw;
     height: 18vh;
-    top: 21%;
-    left: 36%;
+    top: 14%;
+    left: 32%;
   }
 
   .introduction h1 {
@@ -119,5 +121,14 @@
 
   .introduction p {
     font-size: 0.625rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .introduction::before {
+    width: 5vw;
+    height: 19vh;
+    top: 12%;
+    left: 35%;
   }
 }
