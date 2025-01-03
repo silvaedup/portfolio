@@ -2,7 +2,6 @@ body {
   font-family: "Fire Sans", Arial, sans-serif;
   margin: 0px;
   color: #141414;
-  margin-bottom: 1000px;
 }
 
 h1,
@@ -23,7 +22,7 @@ img {
   display: block;
 }
 
-.caption {
+.subtitle {
   font-size: 8rem;
   line-height: 1;
   text-transform: uppercase;

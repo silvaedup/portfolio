@@ -8,7 +8,7 @@
   background-color: #141414;
 }
 
-.caption {
+.experience .subtitle {
   color: #292929;
 }
 
@@ -27,7 +27,7 @@
 }
 
 @media (max-width: 1024px) {
-  .caption {
+  .experience .subtitle {
     font-size: 6rem;
   }
   .experience_text {
@@ -41,7 +41,7 @@
     grid-template-columns: 1fr 1fr;
     gap: 40px;
   }
-  .caption {
+  .experience .subtitle {
     font-size: 4.9rem;
   }
   .experience_text {
@@ -56,7 +56,7 @@
     gap: 20px;
     padding: 30px 20px;
   }
-  .experience .caption {
+  .experience .subtitle {
     font-size: 3.5rem;
     max-width: none;
   }
@@ -73,7 +73,7 @@
     padding: 20px;
   }
 
-  .experience .caption {
+  .experience .subtitle {
     font-size: 2.25rem;
   }
 
