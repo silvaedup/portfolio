@@ -73,3 +73,52 @@
     font-size: 0.7rem;
   }
 }
+@media (max-width: 768px) {
+  .footer_container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px 15px;
+  }
+
+  .footer_container p {
+    font-size: 1.1rem;
+  }
+
+  .footer_contact li {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+  }
+
+  .footer_contact li .icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .footer_copy p {
+    font-size: 0.6rem;
+  }
+}
+@media (max-width: 480px) {
+  .footer_container {
+    gap: 15px;
+    padding: 15px 10px;
+  }
+
+  .footer_container p {
+    font-size: 1rem;
+
+    .footer_contact li {
+      font-size: 1rem;
+      margin-bottom: 10px;
+    }
+
+    .footer_contact li .icon {
+      width: 18px;
+      height: 18px;
+    }
+
+    .footer_copy p {
+      font-size: 0.5rem;
+    }
+  }
+}
